@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareFlow | Smart Hospital Intelligence</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="lumora-body">
+
+    <div class="main-container">
+
+        <header class="nav-header">
+            <div class="logo-area">
+                <div class="logo-placeholder"></div>
+                <span class="brand-name">CareFlow</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#">Dashboard</a>
+                <a href="#">About System</a>
+                <a href="#">Medical Services</a>
+                <a href="#">Patient Records</a>
+                <a href="#">Analytics</a>
+            </nav>
+            <button class="btn-contact">Emergency Support <span class="icon-mail">📞</span></button>
+        </header>
+
+        <section class="hero-section">
+            <div class="hero-image-block"></div>
+
+            <div class="category-tabs">
+                <button class="tab active">Overview</button>
+                <button class="tab">Appointments</button>
+                <button class="tab">Bed Occupancy</button>
+                <button class="tab">Queue Status</button>
+            </div>
+
+            <div class="hero-content">
+                <h1 class="hero-title">INTELLIGENT CARE COORDINATION</h1>
+                <p class="hero-subtitle">Optimizing patient flow with real-time queue management and AI-driven bed
+                    allocation intelligence.</p>
+                <button class="btn-shop">Appointment</button>
+            </div>
+        </section>
+
+        <div class="dashboard-grid">
+            <div class="card col-6 featured-card">
+                <div class="color-block featured-img">
+                    <img src="https://cdn.dribbble.com/userupload/37645608/file/original-468e98a6d5b057c5b31bd01d12af3c25.gif" class="featured-img">
+                </div>
+                <div class="card-info">
+                    <span class="tag">Live Status</span>
+                    <h3>ER Wait Times: 12m</h3>
+                    <p class="small-text">Current average based on last 30 mins</p>
+                    <a href="#" class="shop-now">View Heatmap</a>
+                </div>
+            </div>
+
+            <div class="card col-3 flex-column">
+                <div class="flex-between">
+                    <h3>Bed Logic</h3>
+                    <div class="arrow-icon">⚡</div>
+                </div>
+                <p class="small-text">84% Capacity Optimized</p>
+                <div class="color-block refined-img"></div>
+
+            </div>
+
+            <div class="card col-3 relative">
+                <h3>Ward 4A Tracker</h3>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="ward-management-view">
+
+        <div class="analytics-row">
+            <div class="card ring-card">
+                <h3>Overall Occupancy</h3>
+                <div class="donut-container">
+                    <div class="donut" id="occupancyChart">
+                        <span id="occupancyText">0%</span>
+                    </div>
+                    <div class="donut-legend">
+                        <p><span class="dot occupied"></span> Occupied</p>
+                        <p><span class="dot available"></span> Vacant</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card ring-card">
+                <h3>Readiness Flow</h3>
+                <div class="donut-container">
+                    <div class="donut-placeholder">90%</div>
+                    <div class="donut-legend">
+                        <p><span class="dot available"></span> Ready</p>
+                        <p><span class="dot cleaning"></span> Cleaning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ward-grid-wrapper">
+            <div class="room-container card">
+                <div class="room-header">
+                    <h3>Ward 4-A Floor Plan</h3>
+                    <span class="room-tag">General Medicine</span>
+                </div>
+
+                <div class="floor-plan">
+                    <div class="bed-item status-0" data-bed="B-101">
+                        <div class="bed-headboard"></div>
+                        <span class="bed-label">B-101</span>
+                        <span class="bed-state-text">Available</span>
+                    </div>
+                    <div class="bed-item status-1" data-bed="B-102">
+                        <div class="bed-headboard"></div>
+                        <span class="bed-label">B-102</span>
+                        <span class="bed-state-text">Booked</span>
+                    </div>
+                    <div class="bed-item status-2" data-bed="B-103">
+                        <div class="bed-headboard"></div>
+                        <span class="bed-label">B-103</span>
+                        <span class="bed-state-text">Observation</span>
+                    </div>
+                    <div class="bed-item status-3" data-bed="B-104">
+                        <div class="bed-headboard"></div>
+                        <span class="bed-label">B-104</span>
+                        <span class="bed-state-text">Cleaning</span>
+                    </div>
+                    <div class="bed-item status-0" data-bed="B-105">
+                        <div class="bed-headboard"></div>
+                        <span class="bed-label">B-105</span>
+                        <span class="bed-state-text">Available</span>
+                    </div>
+                    <div class="bed-item status-0" data-bed="B-106">
+                        <div class="bed-headboard"></div>
+                        <span class="bed-label">B-106</span>
+                        <span class="bed-state-text">Available</span>
+                    </div>
+                    <div class="bed-item status-0" data-bed="B-107">
+                        <div class="bed-headboard"></div>
+                        <span class="bed-label">B-107</span>
+                        <span class="bed-state-text">Available</span>
+                    </div>
+                    <div class="bed-item status-1" data-bed="B-108">
+                        <div class="bed-headboard"></div>
+                        <span class="bed-label">B-108</span>
+                        <span class="bed-state-text">Booked</span>
+                    </div>
+                    <div class="bed-item status-2" data-bed="B-109">
+                        <div class="bed-headboard"></div>
+                        <span class="bed-label">B-109</span>
+                        <span class="bed-state-text">Observation</span>
+                    </div>
+                    <div class="bed-item status-0" data-bed="B-110">
+                        <div class="bed-headboard"></div>
+                        <span class="bed-label">B-110</span>
+                        <span class="bed-state-text">Available</span>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <div class="bottom-flex">
+            <div class="card flex-grow">
+                <h3>Clinical Queue</h3>
+                <table class="clinical-table">
+                    <thead>
+                        <tr>
+                            <th>Bed</th>
+                            <th>Patient</th>
+                            <th>History</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="quick-chat-sidebar card">
+                <h3>Staff Notifications</h3>
+                <div class="chat-feed">
+                    <div class="message-bubble">
+                        <p><strong>B-102:</strong> Check-in scheduled for 10:30 AM.</p>
+                        <div class="chat-actions">
+                            <button class="btn-action">Arrived</button>
+                        </div>
+                    </div>
+                    <div class="message-bubble alert">
+                        <p><strong>B-106:</strong> Medication Due (Type 2 Diabetes).</p>
+                        <div class="chat-actions">
+                            <button class="btn-action">Meds Given</button>
+                        </div>
+                    </div>
+                    <div class="message-bubble cleaning">
+                        <p><strong>B-104:</strong> Patient Discharged. Ready for Sanitization.</p>
+                        <div class="chat-actions">
+                            <button class="btn-action">Start Cleaning</button>
+                            <button class="btn-action secondary">Bed Ready</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <!-- Appointment Modal -->
+<div class="modal-overlay" id="appointmentModal">
+  <div class="modal-box">
+    <span class="close-btn" id="closeModal">&times;</span>
+    <h2>Book Appointment</h2>
+
+    <form id="appointmentForm">
+      <input type="text" id="patientName" placeholder="Patient Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <input type="date" required />
+      <select id="department" required>
+        <option value="">Select Department</option>
+        <option>General Medicine</option>
+        <option>Cardiology</option>
+        <option>Orthopedics</option>
+        <option>Emergency</option>
+      </select>
+      <button type="submit" class="btn-submit">Confirm Appointment</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
