@@ -118,8 +118,7 @@ newRow.querySelector(".end-session").addEventListener("click", function() {
   const averageSeconds = Math.floor(total / lastFiveDurations.length);
   const averageMinutes = Math.ceil(averageSeconds / 60);
 
-  document.getElementById("erTime").textContent =
-    `ER Wait Times: ${averageMinutes}m`;
+  document.getElementById("er-Time").textContent = `${averageMinutes}m`;
 
   // Remove patient row safely
   currentRow.remove();
@@ -128,5 +127,6 @@ newRow.querySelector(".end-session").addEventListener("click", function() {
   form.reset();
   modal.style.display = "none";
 });
+
 
 
